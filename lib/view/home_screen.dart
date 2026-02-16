@@ -22,13 +22,15 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Theme.of(context).colorScheme.inversePrimary,
+        backgroundColor: Colors.green,
 
-        title: Text(widget.title),
+        title: Text("Sharif Developer", style: TextStyle(color: Colors.white)),
+        centerTitle: true,
       ),
       body: Center(
         child: Column(
           mainAxisAlignment: .center,
+
           children: [
             const Text('You have pushed the button this many times:'),
             Text(
@@ -38,12 +40,12 @@ class _HomeScreenState extends State<HomeScreen> {
           ],
         ),
       ),
+
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.traffic),
       ),
     );
   }
 }
-
