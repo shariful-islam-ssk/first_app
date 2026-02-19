@@ -21,16 +21,15 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.red)),
-      // home: const SimpleImage(),
-      // home: const SimpleScaffold(),
-      // home: const SimpleButton(),
-      //home: const SimpleList(),
-      //home: const SimpleStyling(),
-      //home: const SimpleWrap(),
-      home: const SimpleInput(),
-
+      home: const SimpleScaffold(),
       // home: const SimpleLayout(),
-      //home: const SimpleImage(),
+      //home: const SimpleStyling(),
+      // home: const SimpleBox(),
+      // home: const SimpleImage(),
+      // home: const SimpleButton(),
+      //home: const SimpleInput(),
+      //home: const SimpleList(),
+      //home: const SimpleWrap(),
     );
   }
 }

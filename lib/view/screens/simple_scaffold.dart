@@ -12,7 +12,7 @@ class SimpleScaffold extends StatelessWidget {
           title: const Text('My First App'),
           backgroundColor: Colors.teal, // অ্যাপবারের রঙ
         ),
-        body: const Center(child: Text('Main Content Here')),
+        body: const Center(child: Text('Main Content Here', style: TextStyle(),)),
         floatingActionButton: FloatingActionButton(
           onPressed: () {}, // বাটনে ক্লিক করলে যা হবে
           child: const Icon(Icons.add),
