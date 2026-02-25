@@ -1,4 +1,4 @@
-import 'package:first_app/view/screens/second_screen.dart';
+import 'package:first_app/view/screens/container_screen.dart';
 import 'package:first_app/view/screens/simple_box.dart';
 import 'package:first_app/view/screens/simple_button.dart';
 import 'package:first_app/view/screens/simple_image.dart';
@@ -23,8 +23,8 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.red)),
       // home: const SimpleScaffold(),
-      home: const SimpleLayout(),
-       // home: const SecondScreen(),
+      // home: const SimpleLayout(),
+       home: const SecondScreen(),
       //home: const SimpleStyling(),
       // home: const SimpleBox(),
       // home: const SimpleImage(),

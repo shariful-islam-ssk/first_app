@@ -15,7 +15,7 @@ class SimpleLayout extends StatelessWidget {
         // উপর-নিচ সাজানোর জন্য
         mainAxisAlignment: .center,
         crossAxisAlignment: .end,
-        spacing: 20, // মাঝে গ্যাপ দেওয়ার জন্য
+        spacing: 20, // SizedBox(height: 20,) children er prottek ta item, not word or letter  গ্যাপ দেওয়ার জন্য
         children: [
           const Text('I am at the TOP'),
           Row(
