@@ -6,15 +6,34 @@ class SimpleScaffold extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("nicher ta screeen"),),
+      appBar: AppBar(
+        title: Text("nicher ta screeen"),
+        backgroundColor: Color(0x0f45fe24),
+      ),
       body: Scaffold(
         appBar: AppBar(
           title: const Text('My First App'),
           backgroundColor: Colors.teal, // অ্যাপবারের রঙ
         ),
-        body: const Center(child: Text('Main Content Here', style: TextStyle(),)),
+        body: Center(
+          child: InkWell(
+            onTap: () {
+              debugPrint('Sharif Taped');
+            },
+            child: Text(
+              'Main Content Here',
+              style: TextStyle(
+                fontWeight: FontWeight.w900,
+                fontSize: 40,
+                color: Colors.green.shade900,
+              ),
+            ),
+          ),
+        ),
         floatingActionButton: FloatingActionButton(
-          onPressed: () {}, // বাটনে ক্লিক করলে যা হবে
+          onPressed: () {
+            debugPrint('SimpleScaffold | FloatingActionButton | Called onPressed');
+          }, // বাটনে ক্লিক করলে যা হবে
           child: const Icon(Icons.add),
         ),
       ),

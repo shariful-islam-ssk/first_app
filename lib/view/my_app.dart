@@ -1,3 +1,5 @@
+import 'package:first_app/view/screens/container_screen.dart';
+import 'package:first_app/view/screens/profile_screen.dart';
 import 'package:first_app/view/screens/simple_box.dart';
 import 'package:first_app/view/screens/simple_button.dart';
 import 'package:first_app/view/screens/simple_image.dart';
@@ -7,6 +9,7 @@ import 'package:first_app/view/screens/simple_scaffold.dart';
 import 'package:first_app/view/screens/simple_styling.dart';
 import 'package:first_app/view/screens/simple_wrap.dart';
 import 'package:first_app/view/screens/third_screen.dart';
+import 'package:first_app/view/utils/object_util.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/home_screen.dart';
@@ -21,8 +24,10 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.red)),
-      home: const SimpleScaffold(),
+      // home: const SimpleScaffold(),
       // home: const SimpleLayout(),
+      //  home: const SecondScreen(),
+      home: ProfileScreen(person: person),
       //home: const SimpleStyling(),
       // home: const SimpleBox(),
       // home: const SimpleImage(),

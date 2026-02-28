@@ -1,25 +1,33 @@
 import 'package:flutter/material.dart';
 
+// evabe siksilam datatype diye baddo krsi
+// List<int> amarIntList = [133, 98495];
+// List<String> amarStringList = [ "dfkdjfdk", "fkdjfkdfj"];
+// List<int> amarList = [133, 98495, "dfkdjfdk", "fkdjfkdfj"]; // Error Ashbe
+
 class SimpleLayout extends StatelessWidget {
   const SimpleLayout({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Column( // উপর-নিচ সাজানোর জন্য
-        mainAxisAlignment: MainAxisAlignment.center,
+      body: Column(
+        // উপর-নিচ সাজানোর জন্য
+        mainAxisAlignment: .center,
+        crossAxisAlignment: .end,
+        spacing: 20, // SizedBox(height: 20,) children er prottek ta item, not word or letter  গ্যাপ দেওয়ার জন্য
         children: [
           const Text('I am at the TOP'),
-          const SizedBox(height: 20), // মাঝে গ্যাপ দেওয়ার জন্য
-          Row( // পাশাপাশি সাজানোর জন্য
-            mainAxisAlignment: MainAxisAlignment.center,
+          Row(
+            // পাশাপাশি সাজানোর জন্য
+            mainAxisAlignment: .center,
             children: const [
-              Icon(Icons.star, color: Colors.blue),
+              Icon(Icons.sixteen_mp, color: Colors.blue),
               Text(' Middle Item '),
               Icon(Icons.star, color: Colors.blue),
             ],
           ),
-          const SizedBox(height: 20),
+
           const Text('I am at the BOTTOM'),
         ],
       ),
