@@ -9,9 +9,10 @@ import 'package:first_app/view/screens/simple_scaffold.dart';
 import 'package:first_app/view/screens/simple_styling.dart';
 import 'package:first_app/view/screens/simple_wrap.dart';
 import 'package:first_app/view/screens/third_screen.dart';
-import 'package:first_app/view/utils/object_util.dart';
+import 'package:first_app/utils/object_util.dart';
 import 'package:flutter/material.dart';
 
+import '../utils/function_sikho.dart';
 import 'screens/home_screen.dart';
 import 'screens/simple_layout.dart';
 
@@ -23,11 +24,11 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.red)),
+      // theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.red)),
       // home: const SimpleScaffold(),
       // home: const SimpleLayout(),
       //  home: const SecondScreen(),
-      home: ProfileScreen(person: person),
+      // home: ProfileScreen(person: person),
       //home: const SimpleStyling(),
       // home: const SimpleBox(),
       // home: const SimpleImage(),
@@ -35,6 +36,7 @@ class MyApp extends StatelessWidget {
       //home: const SimpleInput(),
       //home: const SimpleList(),
       //home: const SimpleWrap(),
+      home: const FunctionTestScreen(),
     );
   }
 }

@@ -1,4 +1,4 @@
-import 'package:first_app/view/utils/object_util.dart';
+import 'package:first_app/utils/object_util.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreen extends StatelessWidget {
