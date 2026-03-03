@@ -9,7 +9,11 @@ class ProfileScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Profile'), backgroundColor: Colors.green, centerTitle: true,),
+      appBar: AppBar(
+        title: Text('Profile'),
+        backgroundColor: Colors.green,
+        centerTitle: true,
+      ),
       body: Container(
         color: Colors.orange,
         padding: .all(16),
@@ -17,8 +21,9 @@ class ProfileScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: .center,
           children: [
-            Text('Name: ${person.name}', style: TextStyle(fontSize: 24),),
-            Text("Age: ${person.age.toString()}"),
+            Text('Name: ${person.name}', style: TextStyle(fontSize: 24)),
+            Text("Age: ${person.age}"),
+            // Text(person.age),
             Text("Gender: ${person.gender.name}"),
             Text("City: {person.address.city}"),
             Text("Area: ${person.address.area}"),

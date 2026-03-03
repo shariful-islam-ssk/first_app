@@ -5,6 +5,7 @@ class SecondScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     // এইখান থেকে const সরিয়ে দিয়েছি
     return Scaffold(
       appBar: AppBar(title: const Text("Corrected Screen")),

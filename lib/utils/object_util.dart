@@ -3,12 +3,12 @@ void main() {
 }
 
 class Person {
-  final String name;
+  // final String name;
   final int age;
   final Gender gender;
   final Address address;
 
-  Person({required this.name, required this.age, required this.address})
+  Person({required String name, required this.age, required this.address})
     : gender = Gender.male;
 }
 
@@ -21,7 +21,11 @@ class Address {
 
 enum Gender { male, female, others }
 
-Person person = Person(name: 'Sharif', age: 32, address: Address(city: 'Dhaka', area: "Mirpur"));
+Person person = Person(
+  name: 'Sharif',
+  age: 32,
+  address: Address(city: 'Dhaka', area: "Mirpur"),
+);
 
 void displayPerson() {
   print(
