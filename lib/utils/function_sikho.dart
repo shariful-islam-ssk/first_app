@@ -148,7 +148,10 @@ class FunctionTestScreen extends StatelessWidget {
             // ২. এখানে আমরা ফাংশনগুলো কল করছি
             // বাটন টিপলে আপনার VS Code-এর নিচের 'Debug Console'-এ রেজাল্ট আসবে
 
-            sendMoney(name: "সৈকত ভাই", amount: 500, message: "ট্রেনিং ফি");
+            String name= "সৈকত ভাই";
+            int amnt=500;
+
+            sendMoney(name:name, amount: amnt, message: "ট্রেনিং ফি");
 
             sendMoney(name: "শরিফ", amount: 1000); // ডিফল্ট মেসেজ আসবে
 
